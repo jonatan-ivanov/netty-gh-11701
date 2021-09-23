@@ -7,6 +7,8 @@ repositories {
 }
 
 dependencies {
+	implementation 'io.netty:netty-transport-native-kqueue:4.1.68.Final:osx-x86_64'
+	implementation 'io.netty:netty-transport-native-epoll:4.1.68.Final:linux-x86_64'
 }
 
 application {
