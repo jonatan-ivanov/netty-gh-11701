@@ -1,5 +1,5 @@
 plugins {
-	id 'application'
+	id 'java'
 }
 
 repositories {
@@ -11,6 +11,12 @@ dependencies {
 	implementation 'io.netty:netty-transport-native-epoll:4.1.68.Final:linux-x86_64'
 }
 
-application {
-	mainClass = 'org.example.App'
+jar {
+	duplicatesStrategy = DuplicatesStrategy.INHERIT
+	manifest {
+		attributes 'Main-Class': 'org.example.App'
+	}
+	from {
+		configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+	}
 }

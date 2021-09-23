@@ -5,7 +5,7 @@ import io.netty.channel.kqueue.KQueue;
 
 public class App {
 	public static void main(String[] args) {
-		System.out.println("Epoll (Linux): " + Epoll.isAvailable());
-		System.out.println("KQueue (OSX): " + KQueue.isAvailable());
+		System.out.println("\tEpoll (Linux): " + Epoll.isAvailable());
+		System.out.println("\tKQueue (OSX): " + KQueue.isAvailable());
 	}
 }

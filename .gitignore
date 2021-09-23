@@ -7,3 +7,5 @@ out/
 *.iws
 *.iml
 *.ipr
+
+test.out
