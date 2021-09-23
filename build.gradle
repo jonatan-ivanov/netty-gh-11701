@@ -12,7 +12,7 @@ dependencies {
 }
 
 jar {
-	duplicatesStrategy = DuplicatesStrategy.INHERIT
+	duplicatesStrategy = DuplicatesStrategy.INCLUDE
 	manifest {
 		attributes 'Main-Class': 'org.example.App'
 	}
