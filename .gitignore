@@ -8,4 +8,5 @@ out/
 *.iml
 *.ipr
 
+Dockerfile
 test.out
