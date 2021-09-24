@@ -3,14 +3,11 @@
 ./gradlew clean assemble
 
 IMAGES=(
-    'bellsoft/liberica-openjre-debian:17'
-    'bellsoft/liberica-openjre-alpine:17'
+    'bellsoft/liberica-openjre-debian:17' # contains glibc
+    'bellsoft/liberica-openjre-alpine:17' # contains glibc
     'bellsoft/liberica-openjre-alpine-musl:17'
 
-#    'openjdk:17-slim'
-#    'openjdk:17-alpine'
-
-    'azul/zulu-openjdk:17'
+    'azul/zulu-openjdk:17' # contains glibc
     'azul/zulu-openjdk-alpine:17-jre'
 )
 
